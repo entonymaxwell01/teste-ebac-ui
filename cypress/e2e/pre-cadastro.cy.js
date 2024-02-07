@@ -4,7 +4,7 @@ import { faker } from '@faker-js/faker';
 describe('Funcionalidade Pre Cadastro', () => {
 
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/');
+        cy.visit('minha-conta/');
     });
     it('Deve completar o pre cadastro com sucesso', () => {
         let email = faker.internet.email();
