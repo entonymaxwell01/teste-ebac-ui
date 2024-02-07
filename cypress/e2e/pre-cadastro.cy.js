@@ -20,4 +20,8 @@ describe('Funcionalidade Pre Cadastro', () => {
         cy.get('#account_last_name').type(lastName);
         cy.get('.woocommerce-Button').click();
     });
+
+    it.only('Deve completar o pre cadastro com sucesso - Usando comandos customizados', () => {
+        cy.preCadastro(faker.internet.email(),faker.internet.password(),faker.person.firstName(),faker.person.lastName());
+    });
 });
